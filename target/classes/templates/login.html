@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body class="red darken-4">
+	<div class="container">
+		<form th:action="@{/login}" method="POST" class="col s12">
+			<div class="container card-panel gray">
+			<div class="col s12">
+				<h1>Acesso ao Sistema</h1>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<label>Login</label>
+					<input type="text" name="username">
+				</div>
+			</div>
+			<div class="row">
+				<div class="center-align input-field col s12">
+					<label>Senha</label>
+					<input type="password" name="password">
+				</div>
+			</div>
+			<div class="row">
+				<div class= "input-field col s6">
+					<button class="btn waves-effect waves-light">Logar</button>
+				</div>
+			</div>
+			</div>
+		</form>
+	</div>
+	<script src="js/materialize.min.js"></script>
+</body>
+</html>
